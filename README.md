@@ -6,5 +6,5 @@ Molecules is a game about collecting and linking molecules (Henry I need a bette
 Molecules will run on any platform that will run Ruby, in a terminal environment
 
 ## Downloading and Installing
-To download, simply download the zip, unzip it, and execute the start.sh script
+To download, simply download the zip, unzip it, and execute the play.sh script
 
