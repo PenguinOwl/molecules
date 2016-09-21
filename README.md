@@ -1,6 +1,6 @@
 # Molecules - A Text Based Ruby Game
 
-Molecules is a game about collecting and linking molecules (Henry I need a better desc.)
+Molecules is a game about collecting and linking molecules, in an open world, with a proceduraly generated environment.
 
 ## System Requirements
 Molecules will run on any platform that will run Ruby, in a terminal environment
