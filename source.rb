@@ -12,6 +12,16 @@ def portgen
   return portid.join
 end
 
+class Port
+  attr_accessor :id, :open, :link, :molecule
+  def initialize(mol)
+    @id = portgen
+    @molecule = mol
+    @open = true
+    @link = nil
+  end
+end
+
 class Molecule
   def initialize
     @portcount = 1
@@ -22,7 +32,7 @@ class Molecule
     end
     @ports = []
     @portcount.times do
-      @ports << portgen
+      @ports << Port.new(self)
     end
   end
   def ports
