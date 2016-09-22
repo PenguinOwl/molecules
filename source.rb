@@ -1,7 +1,21 @@
 # This is the source file. The program runs here.
 
+require 'curses'
+
+startTime = Time.now
+
 length = 5
 height = 5
+
+allnewmol = 0
+
+molesgend = []
+
+list
+
+Curses.noecho
+Curses.init_screen
+Curses.stdscr.keypad(true)
 
 def portgen
   portid = []
@@ -41,3 +55,17 @@ class Molecule
   attr_accessor :name
 end
 
+def services
+  newmols = Time.now - startTime
+  newmols = newmols.to_i
+  newmols /= 60*3
+  newmols -= allnewmol
+  allnewmol += newmols
+  newmols.times do
+    molesgend << Molecule.new
+  end
+  #Saving goes here
+  $key = Curses.getch
+end
+  
+  
