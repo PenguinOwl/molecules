@@ -96,3 +96,5 @@ beanS
   $mode = Curses.getch
 end
 
+mode
+puts mode
