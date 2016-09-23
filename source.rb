@@ -84,7 +84,9 @@ $molesgend.each do |e|
   puts ""
 end
 
-puts 1
+while $molesgend.size > 3
+  $molesgend.pop
+end
 
 gets
 
