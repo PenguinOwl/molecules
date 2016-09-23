@@ -84,6 +84,15 @@ def showmols
 end
 
 def mode
-  $key = Curses.getch
+  system 'clear'
+  puts <<beanS
+Select mode:
+===================
+g - Generator
+e - Explore
+b - Bank
+h - Help
+beanS
+  $mode = Curses.getch
 end
 
