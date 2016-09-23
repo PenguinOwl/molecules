@@ -68,4 +68,10 @@ def services
   $key = Curses.getch
 end
   
-  
+while true
+
+services
+
+p molsgend
+
+end
