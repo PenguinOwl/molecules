@@ -9,7 +9,7 @@ $height = 5
 
 $allnewmol = 0
 
-$molesgend = []
+$molesgend = Array.new
 
 $list = []
 
