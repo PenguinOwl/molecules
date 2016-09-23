@@ -84,6 +84,8 @@ $molesgend.each do |e|
   puts ""
 end
 
+puts 1
+
 gets
 
 end
