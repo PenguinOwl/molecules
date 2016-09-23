@@ -75,7 +75,7 @@ system 'clear'
 
 services
 
-$molsgend.each do |e|
+$molesgend.each do |e|
   puts e.name
   puts "-----------"
   e.ports.each do |s|
