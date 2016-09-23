@@ -74,6 +74,6 @@ services
 
 puts $molsgend
 
-puts "dez nuts"
+puts molsgend.size
 
 end
