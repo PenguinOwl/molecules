@@ -76,6 +76,6 @@ puts $molsgend
 
 puts $length
 
-puts $molsgend.size
+#puts $molsgend.size
 
 end
