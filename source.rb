@@ -13,8 +13,8 @@ $molesgend = Array.new
 
 $list = []
 
-#Curses.noecho
-#Curses.init_screen
+Curses.noecho
+Curses.init_screen
 #Curses.stdscr.keypad(true)
 
 def portgen
@@ -67,27 +67,23 @@ def services
   end
   #Saving goes here
   #$key = Curses.getch
-end
-  
-while true
-
-system 'clear'
-
-services
-
-$molesgend.each do |e|
-  puts e.name
-  puts "-----------"
-  e.ports.each do |s|
-    puts s.id
+  if $molesgend.size > 3
+    $molesgend.pop
   end
-  puts ""
 end
 
-while $molesgend.size > 3
-  $molesgend.pop
+def showmols
+  $molesgend.each do |e|
+    puts e.name
+    puts "-----------"
+    e.ports.each do |s|
+      puts s.id
+    end
+    puts ""
+  end
 end
 
-gets
-
+def mode
+  $key = Curses.getch
 end
+
