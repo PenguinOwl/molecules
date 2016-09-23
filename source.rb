@@ -59,7 +59,7 @@ def services
   newmols = Time.now - $startTime
   newmols = newmols.to_i
   newmols /= 60*3
-  newmols -= allnewmol
+  newmols -= $allnewmol
   $allnewmol += newmols
   newmols.times do
     $molesgend << Molecule.new
