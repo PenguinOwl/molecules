@@ -19,8 +19,8 @@ Curses.stdscr.keypad(true)
 
 def portgen
   portid = []
-  length.times do
-    emt = rand(height-1) + 1
+  $length.times do
+    emt = rand($height-1) + 1
     portid << emt.to_s
   end
   return portid.join
