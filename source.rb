@@ -11,7 +11,7 @@ allnewmol = 0
 
 molesgend = []
 
-list
+list = []
 
 Curses.noecho
 Curses.init_screen
