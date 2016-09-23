@@ -4,14 +4,14 @@ require 'curses'
 
 $startTime = Time.now
 
-length = 5
-height = 5
+$length = 5
+$height = 5
 
-allnewmol = 0
+$allnewmol = 0
 
-molesgend = []
+$molesgend = []
 
-list = []
+$list = []
 
 Curses.noecho
 Curses.init_screen
@@ -60,9 +60,9 @@ def services
   newmols = newmols.to_i
   newmols /= 60*3
   newmols -= allnewmol
-  allnewmol += newmols
+  $allnewmol += newmols
   newmols.times do
-    molesgend << Molecule.new
+    $molesgend << Molecule.new
   end
   #Saving goes here
   $key = Curses.getch
@@ -72,6 +72,6 @@ while true
 
 services
 
-p molsgend
+p $molsgend
 
 end
