@@ -13,9 +13,9 @@ $molesgend = Array.new
 
 $list = []
 
-Curses.noecho
+#Curses.noecho
 #Curses.init_screen
-Curses.stdscr.keypad(true)
+#Curses.stdscr.keypad(true)
 
 def portgen
   portid = []
