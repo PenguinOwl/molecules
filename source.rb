@@ -74,6 +74,8 @@ services
 
 puts $molsgend
 
+puts $length
+
 puts $molsgend.size
 
 end
