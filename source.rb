@@ -65,7 +65,7 @@ def services
     $molesgend << Molecule.new
   end
   #Saving goes here
-  $key = Curses.getch
+  #$key = Curses.getch
 end
   
 while true
