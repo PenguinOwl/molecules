@@ -14,7 +14,7 @@ $molesgend = []
 $list = []
 
 Curses.noecho
-Curses.init_screen
+#Curses.init_screen
 Curses.stdscr.keypad(true)
 
 def portgen
@@ -48,6 +48,7 @@ class Molecule
     @portcount.times do
       @ports << Port.new(self)
     end
+    @name = "Untitled"
   end
   def ports
     return @ports
@@ -70,10 +71,19 @@ end
   
 while true
 
+system 'clear'
+
 services
 
-puts $molsgend
+$molsgend.each do |e|
+  puts e.name
+  puts "-----------"
+  e.ports.each do |s|
+    puts s.id
+  end
+  puts ""
+end
 
-puts $molesgend.size
+gets
 
 end
