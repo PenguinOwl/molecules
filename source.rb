@@ -74,6 +74,6 @@ services
 
 puts $molsgend
 
-puts molsgend.size
+puts $molsgend.size
 
 end
