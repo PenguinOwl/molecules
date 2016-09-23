@@ -72,6 +72,6 @@ while true
 
 services
 
-p $molsgend
+puts $molsgend
 
 end
