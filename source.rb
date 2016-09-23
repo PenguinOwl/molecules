@@ -2,7 +2,7 @@
 
 require 'curses'
 
-startTime = Time.now
+$startTime = Time.now
 
 length = 5
 height = 5
@@ -56,7 +56,7 @@ class Molecule
 end
 
 def services
-  newmols = Time.now - startTime
+  newmols = Time.now - $startTime
   newmols = newmols.to_i
   newmols /= 60*3
   newmols -= allnewmol
