@@ -1,4 +1,4 @@
-# This is what starts the game
+# This is what starts the game l
 
 ruby -v
 
