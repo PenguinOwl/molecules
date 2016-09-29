@@ -1,5 +1,5 @@
-# This is what starts the game l
+# This is what starts the game
 
 ruby -v
 
-ruby update.rb $PWD
+ruby source.rb $PWD
