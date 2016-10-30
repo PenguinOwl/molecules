@@ -67,27 +67,34 @@ def services
   end
   #Saving goes here
   #$key = Curses.getch
-end
-  
-while true
-
-system 'clear'
-
-services
-
-$molesgend.each do |e|
-  puts e.name
-  puts "-----------"
-  e.ports.each do |s|
-    puts s.id
+  if $molesgend.size > 3
+    $molesgend.pop
   end
-  puts ""
 end
 
-while $molesgend.size > 3
-  $molesgend.pop
+def showmols
+  $molesgend.each do |e|
+    puts e.name
+    puts "-----------"
+    e.ports.each do |s|
+      puts s.id
+    end
+    puts ""
+  end
 end
 
-gets
-
+def mode
+  system 'clear'
+  puts <<beanS
+Select mode:
+===================
+g - Generator
+e - Explore
+b - Bank
+h - Help
+beanS
+  $mode = Curses.getch
 end
+
+mode
+puts mode
