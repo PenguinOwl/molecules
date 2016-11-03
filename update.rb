@@ -10,13 +10,13 @@ unless ARGV[0] == '--noupdate' or ARGV[0] == '-nu'
   Dir.chdir(ARGV[0])
   f2o = File.open('source.rb',"w+")
   curfile = []
-  f.each_line do |line|
+  contents.each_line do |line|
     curfile << line
   end
   curfile = curfile.join
   if curfile == contents
     puts "Up to date. Starting engine."
-    system 'sudo #{ARGV[0]}source.rb'
+    system '#{ARGV[0]}source.rb'
     exit
   else
     curfile.truncate(0)
@@ -24,8 +24,8 @@ unless ARGV[0] == '--noupdate' or ARGV[0] == '-nu'
       curfile.write(line)
     end
     puts "Updated. Starting engine."
-    system 'sudo #{ARGV[0]}source.rb'
+    system '#{ARGV[0]}source.rb'
     exit
   end
 end
-system 'sudo #{ARGV[1]}source.rb'
+system '#{ARGV[1]}source.rb'
