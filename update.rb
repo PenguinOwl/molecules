@@ -20,7 +20,7 @@ unless ARGV[0] == '--noupdate' or ARGV[0] == '-nu'
     exit
   else
     curfile.truncate(0)
-    content.each_line do |line|
+    contents.each_line do |line|
       curfile.write(line)
     end
     puts "Updated. Starting engine."
