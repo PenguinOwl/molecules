@@ -37,6 +37,7 @@ class Port
 end
 
 class Molecule
+  attr_accessor :name
   def initialize
     @portcount = 1
     ran = 0
@@ -53,8 +54,18 @@ class Molecule
   def ports
     return @ports
   end
-  attr_accessor :name
+  def fetch(id)
+    fetchlist = []
+    @ports.each do |fdp|
+      if fdp.id == id
+        fetchlist << fdp
+      end
+    end
+    return fetchlist
 end
+
+def join(mol1,id1,mol2,id2)
+  if mol
 
 def services
   newmols = Time.now - $startTime
