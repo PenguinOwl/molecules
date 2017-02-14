@@ -37,6 +37,7 @@ class Port
 end
 
 class Molecule
+  attr_accessor :name
   def initialize
     @portcount = 1
     ran = 0
@@ -53,9 +54,50 @@ class Molecule
   def ports
     return @ports
   end
-  attr_accessor :name
+  def fetch(id)
+    fetchlist = []
+    @ports.each do |fdp|
+      if fdp.id == id
+        fetchlist << fdp
+      end
+    end
+    return fetchlist
+    def fetchopen(id)
+    fetchlist = []
+    @ports.each do |fdp|
+      if fdp.id == id and fdp.open? == true
+        fetchlist << fdp
+      end
+    end
+    return fetchlist[0]
+    def fetchclosed(id)
+    fetchlist = []
+    @ports.each do |fdp|
+      if fdp.id == id and fdp.open? == false
+        fetchlist << fdp
+      end
+    end
+    return fetchlist[0]
 end
 
+def join(mol1,mol2,id)
+  unless mol1.fetchopen(id) == nil or mol2.fetchopen(id) == nil
+    mol1.fetchopen(id).link=(mol2.fetchopen(id))
+    mol2.fetchopen(id).link=(mol1.fetchopen(id))
+    mol1.fetchopen(id).open=(false)
+    mol2.fetchopen(id).open=(false)
+  end
+end
+
+def break(mol1,id)
+  unless mol1.fetchclosed(id) == nil
+    mol1.fetchclosed(id).open=(true)
+    mol1.fetchclosed(id).link.open=(true)
+    mol1.fetchclosed(id).link.link=(nil)
+    mol1.fetchclosed(id).link=(nil)
+  end
+end
+  
 def services
   newmols = Time.now - $startTime
   newmols = newmols.to_i
