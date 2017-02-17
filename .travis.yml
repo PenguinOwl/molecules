@@ -1,6 +1,4 @@
-{
-  "language": "ruby",
-  "group": "stable",
-  "dist": "precise",
-  "os": "linux"
-}
+language: ruby
+rvm:
+  - 2.2
+  - jruby
