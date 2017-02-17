@@ -71,10 +71,11 @@ class Molecule
     end
     return fetchlist[0]
     def fetchclosed(id)
-    fetchlist = []
-    @ports.each do |fdp|
-      if fdp.id == id and fdp.open? == false
-        fetchlist << fdp
+      fetchlist = []
+      @ports.each do |fdp|
+        if fdp.id == id and fdp.open? == false
+          fetchlist << fdp
+        end
       end
     end
     return fetchlist[0]
