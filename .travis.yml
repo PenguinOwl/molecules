@@ -4,3 +4,7 @@ rvm:
   - jruby
 script: ruby source.rb
 install: gem install curses
+branches:
+  only:
+  - master
+  - Unstable
