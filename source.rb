@@ -80,6 +80,7 @@ class Molecule
       end
     end
     return fetchlist[0]
+  end
 end
 
 def join(mol1,mol2,id)
