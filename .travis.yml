@@ -3,3 +3,4 @@ rvm:
   - 2.2
   - jruby
 script: ruby source.rb
+install: gem install curses
