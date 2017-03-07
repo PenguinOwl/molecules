@@ -62,23 +62,23 @@ class Molecule
       end
     end
     return fetchlist
-    def fetchopen(id)
-      fetchlist = []
-      @ports.each do |fdp|
-       if fdp.id == id and fdp.open? == true
-         fetchlist << fdp
-       end
+  end
+  def fetchopen(id)
+   fetchlist = []
+   @ports.each do |fdp|
+    if fdp.id == id and fdp.open == true
+     fetchlist << fdp
+      end
      end
-    end
     return fetchlist[0]
+  end
     def fetchclosed(id)
       fetchlist = []
       @ports.each do |fdp|
-        if fdp.id == id and fdp.open? == false
+        if fdp.id == id and fdp.open == false
           fetchlist << fdp
         end
       end
-    end
     return fetchlist[0]
   end
 end
@@ -158,3 +158,5 @@ end
 
 john = Molecule.new
 puts john.ports
+may = Molecule.new
+puts join(john,may,john.ports[1].id)
