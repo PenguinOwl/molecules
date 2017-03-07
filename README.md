@@ -1,4 +1,5 @@
 ![Banner](http://i.imgur.com/gtv0ekR.png)
+<div style="text-align:center"><img src ="https://api.travis-ci.org/PenguinOwl/molecules.svg?branch=Unstable" /></div>
 # Molecules - A Text Based Ruby Game
 
 Molecules is a game about collecting and linking molecules, in an open world, with a proceduraly generated environment.
