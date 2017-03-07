@@ -89,6 +89,9 @@ def join(mol1,mol2,id)
     mol2.fetchopen(id).link=(mol1.fetchopen(id))
     mol1.fetchopen(id).open=(false)
     mol2.fetchopen(id).open=(false)
+    return true
+  else
+    return false
   end
 end
 
@@ -98,6 +101,9 @@ def break(mol1,id)
     mol1.fetchclosed(id).link.open=(true)
     mol1.fetchclosed(id).link.link=(nil)
     mol1.fetchclosed(id).link=(nil)
+    return true
+  else
+    return false
   end
 end
   
