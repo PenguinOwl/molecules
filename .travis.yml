@@ -1,0 +1,9 @@
+language: ruby
+rvm:
+  - 2.2
+script: ruby source.rb
+install: gem install curses
+branches:
+  only:
+  - master
+  - Unstable

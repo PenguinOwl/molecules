@@ -1,5 +1,9 @@
-![Banner](http://i.imgur.com/gtv0ekR.png)
-# Molecules - A Text Based Ruby Game
+
+![Banner](http://i.imgur.com/V50VFBH.png)
+# Molecules - THIS IS THE UNSTABLE BRANCH!
+
+!!! WARNING !!!
+THIS BRANCH IS UNSTABLE, IF ANYTHING HAPPENS, THAT IS BECAUSE IT IS UNSTABLE.
 
 Molecules is a game about collecting and linking molecules, in an open world, with a proceduraly generated environment.
 

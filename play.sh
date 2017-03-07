@@ -2,4 +2,4 @@
 
 ruby -v
 
-ruby update.rb $PWD
+ruby source.rb $PWD
