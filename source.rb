@@ -80,7 +80,6 @@ class Molecule
         end
       end
     return fetchlist[0]
-    end
   end
 end
 
