@@ -70,8 +70,8 @@ class Molecule
      fetchlist << fdp
       end
      end
-    end
     return fetchlist[0]
+  end
     def fetchclosed(id)
       fetchlist = []
       @ports.each do |fdp|
@@ -79,8 +79,8 @@ class Molecule
           fetchlist << fdp
         end
       end
-    end
     return fetchlist[0]
+    end
   end
 end
 
