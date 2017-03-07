@@ -62,12 +62,13 @@ class Molecule
       end
     end
     return fetchlist
-    def fetchopen(id)
-      fetchlist = []
-      @ports.each do |fdp|
-       if fdp.id == id and fdp.open? == true
-         fetchlist << fdp
-       end
+  end
+  def fetchopen(id)
+   fetchlist = []
+   @ports.each do |fdp|
+    if fdp.id == id and fdp.open? == true
+     fetchlist << fdp
+      end
      end
     end
     return fetchlist[0]
