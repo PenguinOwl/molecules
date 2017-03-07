@@ -1,5 +1,5 @@
-
 ![Banner](http://i.imgur.com/V50VFBH.png)
+<div style="text-align:center"><img src ="https://api.travis-ci.org/PenguinOwl/molecules.svg?branch=Unstable" /></div>
 # Molecules - THIS IS THE UNSTABLE BRANCH!
 
 !!! WARNING !!!
