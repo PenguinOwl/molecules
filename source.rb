@@ -159,4 +159,6 @@ end
 john = Molecule.new
 puts john.ports
 may = Molecule.new
+may.ports[0].id=("123")
+john.ports[0].id=("123")
 puts join(john,may,john.ports[1].id)
