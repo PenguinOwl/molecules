@@ -130,16 +130,25 @@ end
 
 def mode
   system 'clear'
-  puts <<beanS
+  puts <<beanSx
 Select mode:
 ===================
 g - Generator
 e - Explore
 b - Bank
 h - Help
-beanS
-  $mode = Curses.getch
+beanSx
+  $mode = Curses.getch 
 end
 
-mode
-puts mode
+#mode
+#puts mode
+
+# --------------------------------
+#        The following is
+#        just for testing 
+#            purposes.
+# --------------------------------
+
+john = Molecule.new
+puts john.ports
